@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.library-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.library-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+
+.library-subtitle {
+    font-size: 1.5rem;
+    color: grey;
+    letter-spacing: 1px;
+}
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+.user-bar p {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.logout-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.logout-button:hover{
+ color: red;
+}
+
+.main-nav{
+    background-color: #475c6c;
+    padding: 10px 0;
+    text-align: center;
+}
+.main-nav ul {
+    list-style: none;
+}
+.main-nav ul li {
+    display: inline;
+    margin: 0 25px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main-nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+.main-nav ul li:hover {
+    opacity: 0.5;
+}
+.sub-header{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+/* section */
+  /* Styling for table */
+  .books-table {
+    width: max-content;
+    border-collapse: collapse;
+    margin: 20px 10px;
+  }
+  
+  .books-table th, .books-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .books-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  .max{
+    max-width: 250px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+  /* Section has display: flex and row alignment */
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+
+   .box-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+  } 
+  hr{
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  form {
+    position: relative;
+    display: inline-block;
+}
+
+
+.search-box {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.search-button i {
+    font-size: 16px;
+}
+
+.search-button:hover {
+    opacity: 0.5;
+}
+/* footer */
+footer{
+    /* position: fixed; */
+    width: 100%; 
+    bottom: 0;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #ccc;
+}
